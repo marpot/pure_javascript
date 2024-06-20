@@ -1,0 +1,29 @@
+{
+  "name": "projekt",
+  "version": "1.0.0",
+  "description": "projekt testowy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "eslint": "^9.5.0",
+    "eslint-plugin-react": "^7.34.3",
+    "globals": "^15.6.0"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "useTabs": false,
+    "endOfLine": "auto",
+    "jsxSingleQuote": false,
+    "printWidth": 80
+  },
+  "keywords": []
+}

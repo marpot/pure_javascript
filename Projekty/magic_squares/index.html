@@ -1,0 +1,94 @@
+<!--
+--- HTML i CSS ---
+1. Stworzyć plik index.html i strukturę dokumentu.
+2. Stworzyć przycisk w html.
+3. Ostylować przyciski i kwadraty które będą tworzone.
+
+--- JAVASCRIPT ---
+1. Podpiąć pod przycisk nasłuchiwanie na click.
+2. Zadeklarować funkcję.
+3. W funkcji stworzyć element html (div).
+4. Dodać div do strony.
+5. Stworzyć licznik i uzupełnić zawartość elementu div o wartość licznika.
+6. Za pomocą instrukcji warunkowej stwierdzić czy dany element jest 5, jeśli tak nadać mu inną klasę.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        button{
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+
+        div {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            margin: 5px;
+            float: left;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            animation: fade-in 0.5s;
+            border: 2px solid black;
+        }
+
+        .circle{
+            background-color: white;
+            border-radius: 50%;
+            color: black;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="button-41">Utwórz element</button>
+    <script>
+        //Pobieramy element z DOM(ze strony internetowej)
+        const btn = document.querySelector("button");
+
+        /* Tworzymy zmienną za pomocą let, ponieważ będziemy ją zmieniać.
+        Będzie pełniła funkcję licznika. */
+        let number = 1;
+
+        let activeNumber = 1;
+
+        /* Tworzymy funkcję i przypisujemy ją do zmiennej dzięki czemu możemy
+        się do niej odwoływać z innych miejsc w programie */
+        const addElement = function() {    
+            /* Tworzymy węzeł(element) html i przypisujemy do zmienej.
+            Istnieje on w pamięci, na tym etampie nie jest dodany do strony */
+            const div = document.createElement('div');
+            /* Do stoworzonego elementu html (<div></div> za pomocą właściwości
+            textContent dodajemy zawartość między znaczniki) */
+            div.textContent = number; //efekt -> <div>1</div>
+            div.style.animation = "fade-in 3s";
+
+            // if(number%5 == 0) {
+            //     div.classList.add("circle")
+            // }
+            console.log(activeNumber);
+            if (activeNumber == 5){
+                activeNumber = 0;
+                div.classList.add("circle");
+            }
+
+            document.body.appendChild(div);
+            number++; //inkrementacja
+            
+            activeNumber++;
+        }
+
+        btn.addEventListener("click", addElement);
+    </script>
+</body>
+</html>
+
