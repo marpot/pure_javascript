@@ -1,4 +1,4 @@
-Magic Squares Generator
+<b>Magic Squares Generator</b>
 This simple JavaScript program generates squares dynamically on a webpage when a button is clicked. Each square displays a sequential number, and every fifth square is styled differently to indicate its special status.
 
 Features
