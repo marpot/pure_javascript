@@ -4,48 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Marcin Potoczny - Web designer portfolio">
+    <meta name="keywords" content="web design, Marcin Potoczny, portfolio">
     <title>Marcin Potoczny</title>
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="context">
-        <h1>Web design</h1>
-        <h1>is simple</h1>
-    </div>
+    <header>
+        <div class="context">
+            <h1>Web design</h1>
+            <h1>is simple</h1>
+        </div>
+    </header>
 
-    <div class="area">
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+    <main>
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
 
-    <!-- Strzałka przewijania -->
-    <div class="scroll-down" onclick="scrollToForm()">
-        <span></span>
-    </div>
+        <div class="scroll-down" onclick="scrollToForm()" aria-label="Scroll down">
+            <span></span>
+        </div>
 
-    <!-- Sekcja formularza kontaktowego -->
-    <div class="contact-section" id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </div>
+        <section class="about-section">
+            <div class="about">
+                <h2>About me</h2>
+            </div>
 
-    <script src="script.js"></script>
+            <div class="about-text">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatem non sapiente, tenetur eum excepturi corrupti nihil deleniti obcaecati facilis ad amet? Et illum blanditiis minima libero quia quam recusandae!</p>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Message to me</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function scrollToForm() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>

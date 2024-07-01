@@ -37,9 +37,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         setTimeout(type, 200);
     })();
+
+    type();
 });
 
 // Funkcja przewijania do formularza
 function scrollToForm() {
     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
 }
+

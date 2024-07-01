@@ -199,11 +199,25 @@ body {
     }
 }
 
+.about-section{
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.about-section h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #4e54c8;
+}
+
+
 /* Stylizacja formularza kontaktowego */
 .contact-section {
     background-color: #f4f4f4;
     padding: 50px;
     text-align: center;
+    
 }
 
 .contact-section h2 {
