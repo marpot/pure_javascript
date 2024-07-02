@@ -1,4 +1,5 @@
 const spnText = document.querySelector('.text');
+const spnCursor = document.querySelector('.cursor');
 const txt = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
@@ -14,5 +15,12 @@ incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr
     spnText.textContent +=  txt[indexText];
     indexText++;
     if(indexText === txt.length) clearInterval(indexTyping);
+   //  spnCursor.style.display = 'inline-block';
  }
- const indexTyping = setInterval(addLetter, time);
+
+const cursorAnimation = () => {
+   spnCursor.classList.toggle('active');
+}
+
+const indexTyping = setInterval(addLetter, time);
+setInterval(cursorAnimation, 400);
