@@ -2,7 +2,7 @@ Projekty
 
 # JavaScript Projects
 
-Welcome to the repository containing various projects created in JavaScript! Each project is hosted on Vercel and can be easily tested using the links below.
+Welcome to the repository containing various projects created in JavaScript! Each project will be hosted on Vercel and can be easily tested using the links below.
 
 ## Projects
 
