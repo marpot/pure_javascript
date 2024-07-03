@@ -9,6 +9,8 @@ Welcome to the repository containing various projects created in JavaScript! Eac
 ### --- LINKS --- (I am going to add more links later)
 
 https://pure-javascript-mousemove.vercel.app/ - changing background and position by the mouse move. Pure Javascript.
+
+
 https://move-rectangle.vercel.app/ - move rectangle by mouse
 
 ## How to Use
