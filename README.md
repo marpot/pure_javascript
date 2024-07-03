@@ -6,7 +6,7 @@ Welcome to the repository containing various projects created in JavaScript! Eac
 
 ## Projects
 
-### --- LINKS ---
+### --- LINKS --- (I will add later more links)
 
 https://pure-javascript-mousemove.vercel.app/ - changing background and position by the mouse move. Pure Javascript.
 
