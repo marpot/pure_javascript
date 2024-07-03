@@ -20,7 +20,7 @@ All you need to run the projects is a modern web browser.
 
 ## Contact
 
-If you have any questions or suggestions regarding the projects, please contact me through GitHub Issues or directly via email: example@example.com.
+If you have any questions or suggestions regarding the projects, please contact me through GitHub Issues or directly via email: marcin.potoczny@protonmail.com .
 
 ---
 
