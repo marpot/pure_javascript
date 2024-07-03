@@ -13,6 +13,8 @@ https://pure-javascript-mousemove.vercel.app/ - changing background and position
 
 https://move-rectangle.vercel.app/ - move rectangle by mouse
 
+https://passwordver1-avm8fs8mu-marpots-projects.vercel.app/ - password check. Correct passwords: "user", "wiosna", "Ania"
+
 ## How to Use
 
 Each project can be opened in a browser by clicking on the appropriate link. The projects are ready to use and require no additional configuration.
