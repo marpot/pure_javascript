@@ -6,9 +6,7 @@ Welcome to the repository containing various projects created in JavaScript! Eac
 
 ## Projects
 
-### 1. Project A
-- Description: A brief description of Project A.
-- Vercel Link: [Project A on Vercel]((https://pure-javascript-mousemove.vercel.app/))
+### --- HERE WILL BE LINKS ---
 
 ## How to Use
 
