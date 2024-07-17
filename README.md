@@ -8,6 +8,8 @@ Welcome to the repository containing various projects created in JavaScript! Eac
 
 ### --- LINKS --- (I am going to add more links later)
 
+https://marcinpotoczny.vercel.app/ - like-cv-page
+
 https://pure-javascript-mousemove.vercel.app/ - changing background and position by the mouse move. Pure Javascript.
 
 
